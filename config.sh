@@ -1,6 +1,37 @@
 #!/bin/sh
 # GNU GENERAL PUBLIC LICENSE
 # FE | AUTOMATE by 3n0k4s & F4r0k3
+menu () {
+cat << EOF
+                                            
+                                            
+FFFFFFFFFFFFFFFFFFFFFFEEEEEEEEEEEEEEEEEEEEEE
+F::::::::::::::::::::FE::::::::::::::::::::E
+F::::::::::::::::::::FE::::::::::::::::::::E
+FF::::::FFFFFFFFF::::FEE::::::EEEEEEEEE::::E
+  F:::::F       FFFFFF  E:::::E       EEEEEE
+  F:::::F               E:::::E             
+  F::::::FFFFFFFFFF     E::::::EEEEEEEEEE   
+  F:::::::::::::::F     E:::::::::::::::E   
+  F:::::::::::::::F     E:::::::::::::::E   
+  F::::::FFFFFFFFFF     E::::::EEEEEEEEEE   
+  F:::::F               E:::::E             
+  F:::::F               E:::::E       EEEEEE
+FF:::::::FF           EE::::::EEEEEEEE:::::E
+F::::::::FF           E::::::::::::::::::::E
+F::::::::FF           E::::::::::::::::::::E
+FFFFFFFFFFF           EEEEEEEEEEEEEEEEEEEEEE
+                                            
+  Sélectionnez votre système                                          
+Commandes :
+ Ubuntu  >>> ubuntu
+ 
+ Kali Linux >>> kali
+
+ Debian >>> debian
+EOF
+read -p " >>>" mainchoice
+}
 ubuntu () { 
 #V1
 sudo apt-get install nikto
