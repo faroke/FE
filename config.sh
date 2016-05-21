@@ -35,7 +35,10 @@ read -p " >>>" mainchoice
 }
 sh_ubuntu () { 
 mkdir /opt/FE
-cp ./* /opt/FE
+touch /opt/FE/FE.sh
+cat >> /opt/FE/FE.sh << EOF
+#######CODE#######
+EOF
 #V1
 sudo apt-get install nikto
 sudo apt-get install nmap
